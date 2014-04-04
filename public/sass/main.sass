@@ -7,9 +7,11 @@
 
 
 body
-  +outer-container()
+  +outer-container
 
 .welcome
+  +clearfix
+
   margin-top: 7em
 
 
@@ -18,6 +20,14 @@ body
   +shift(3)
 
   transform-style: preserve-3d
+
+  +media(max-width 68em, 10)
+    +span-columns(6)
+    +shift(2)
+
+  +media(max-width 40em, 11)
+    +span-columns(9)
+    +shift(1)
 
 
 .welcome-bubbles
@@ -51,7 +61,7 @@ body
 
   z-index: 2
 
-  .welcome-focus &, .no-js &
+  .welcome-focus &, .no-hover &
     transform: translateX(-116.03631%)
 
 
@@ -60,7 +70,7 @@ body
 
   z-index: 2
 
-  .welcome-focus &, .no-js &
+  .welcome-focus &, .no-hover &
     transform: translateX(0)
 
 
