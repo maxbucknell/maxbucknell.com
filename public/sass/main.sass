@@ -1,0 +1,92 @@
+
+
+@import 'bourbon/bourbon'
+@import 'neat/neat'
+
+@import 'bitters/bitters'
+
+
+body
+  +outer-container()
+
+.welcome
+  margin-top: 7em
+
+
+%welcome-box
+  +span-columns(6)
+  +shift(3)
+
+  transform-style: preserve-3d
+
+
+.welcome-bubbles
+  @extend %welcome-box
+
+  position: relative
+
+
+.welcome-bubble
+  +span-columns(2 of 6)
+
+  transition: transform 0.3s cubic-bezier(0.5, -0.5, 0.5, 1)
+
+  border-radius: 100%
+
+  img
+    width: 100%
+
+
+.clickable
+  cursor: pointer
+
+
+.me-welcome-bubble
+  transform: translateX(116.03631%) translateZ(0.0001px)
+  z-index: 3
+
+
+.work-welcome-bubble
+  transform: translateX(-30px) translateY(9px) rotateZ(7deg)
+
+  z-index: 2
+
+  .welcome-focus &, .no-js &
+    transform: translateX(-116.03631%)
+
+
+.university-welcome-bubble
+  transform: translateX(-116.03631%) translateX(28px) translateY(15px) rotateZ(38deg)
+
+  z-index: 2
+
+  .welcome-focus &, .no-js &
+    transform: translateX(0)
+
+
+.welcome-descriptions
+  @extend %welcome-box
+
+
+%welcome-description
+  padding: 2em 0
+  border-bottom: 1px dotted $light-gray
+  display: none
+
+  &.description-active
+    display: block
+
+  .no-js &
+    display: block
+
+
+.me-welcome-description
+  @extend %welcome-description
+
+
+.work-welcome-description
+  @extend %welcome-description
+
+
+.university-welcome-description
+  @extend %welcome-description

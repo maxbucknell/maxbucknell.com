@@ -1,0 +1,9 @@
+{
+  "name": "maxbucknell.com",
+  "dependencies": {
+    "labjs": "*",
+    "jquery": "~2.1.0",
+    "lodash": "~2.4.1",
+    "javascript-state-machine": "~2.3.0"
+  }
+}
