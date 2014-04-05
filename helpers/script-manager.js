@@ -112,10 +112,10 @@ function addToDependencyTree (dependency, dependent, depth) {
   if (depth > 100) throw new Error('Circular dependency in script.')
 
   // We don't want to parse a script twice if it's redeclared.
-  if (_.isObject(parent[script])) return
-  else parent[script] = {}
+  if (_.isObject(dependent[dependency])) return
+  else dependent[dependency] = {}
 
-  var file = path.join(__dirname, '..', script)
+  var file = path.join(__dirname, '..', dependency)
   var content = fs.readFileSync(file, { encoding: 'utf-8' })
 
   var includeCalls = content.match(/\/\/@include .+\.js\s/g)
@@ -124,7 +124,7 @@ function addToDependencyTree (dependency, dependent, depth) {
 
   _.each( deps
         , function wrapper (dep) {
-            addToDependencyTree(dep, parent[script], depth + 1)
+            addToDependencyTree(dep, dependent[dependency], depth + 1)
           }
         )
 }
@@ -171,7 +171,7 @@ function convertToScriptCall (level) {
 function getLabChain () {
   var levels = getDependencyLevels()
 
-  var scriptCalls = _.map(levels, convertToScriptCalls)
+  var scriptCalls = _.map(levels, convertToScriptCall)
 
   var labChain = scriptCalls.join('.wait().')
 
