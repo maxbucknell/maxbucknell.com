@@ -22,6 +22,14 @@ app.use('/public', express.static(path.join(__dirname, 'public')))
 
 
 /**
+ * Keybase requires a very specific route
+ */
+
+app.use( '/.well-known'
+       , express.static(path.join(__dirname, 'public/.well-known'))
+       )
+
+/**
  * Load default scripts
  */
 

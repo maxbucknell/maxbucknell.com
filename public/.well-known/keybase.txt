@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/maxbucknell
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://maxbucknell.com
+  * I am maxbucknell (https://keybase.io/maxbucknell) on keybase.
+  * I have a public key with fingerprint BC91 0CA3 ECD3 BA19 A8AB  A226 D746 7B8B 30EF B124
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "bc910ca3ecd3ba19a8aba226d7467b8b30efb124",
+            "host": "keybase.io",
+            "key_id": "D7467B8B30EFB124",
+            "uid": "9f8d3a534136bdce7890078d74948500",
+            "username": "maxbucknell"
+        },
+        "service": {
+            "hostname": "maxbucknell.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396711888,
+    "expire_in": 157680000,
+    "prev": "9518c52ed02063ecd7c3a0b46d1bb49043af7d0e8b0451d19f190de3cd8175f4",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owGbwMvMwMXoqHPx53u1xFrG0wd+JDEEOyheqFZKyk+pVLKqVspOBVNpmXnpqUUF
+RZl5JUpWSknJloYGyYnGqckpxkmJhpaJFolJiUZGZinmJmbmSRZJxgapaUmGRiZK
+OkoZ+cUgHUBjkhKLU/Uy84FiQE58ZgpQ1AWk3snCydjA1c0Jor4ULGGZZpFinGhq
+bGJobJaUkpxqbmFpYGBuATTf0sTC1MAApLA4tSgvMTcVqDo3sSKpNDk7LzUnR6lW
+RwkoUZaZnApyNsh2TEV6yfm5QBMKivJL8pPzc4CSGSUlBcVWIM0llQUg1eWpSfFQ
+c+KTMvNSgN4H6ihLLSrOzM9TsjIEqkwuyQQZbGhsaWZuaGhhYaGjlFpRkFmUGp8J
+UmFqbmZhAAQge1LLQH4yNbRINjVKTTEwMjADBZ15snGiQZKJWYphUpKJpYGJcWKa
+eYpBqkWSgYmpYYqhZZqhpUFKqnFyioWhuWkaKHCKUwvz8pWsTIDOTEwHGlmcmZ6X
+WFJalKpU28kkw8LAyMXAxsoEikAGLk4BWLS6W/P/L9s+LUTdgWHD5MipL/W8eJ6c
+LWbX3RPwfdbr2DUc3erVTqZZZlqnX292vaRg2J774vgR5yRZQ/1rSVV8MqwXbS+t
+FdXZ6iq3Wb73oJ7qsVeNIkl7TobkBGZv4y7OWXc4fsebpo67NV+c/6ycVWPwNrLy
+2MrHG/wEXRptdq/m1mib6ix2vm1yqYtm9dYnNvyLQ8TfF2Tc6Hmm1OzgfmZDX4NU
++q5sqVNeX5dcXad0RbxYcBr7sVuTt6QL5YbIt6nusv72hCmjxk1UuvFH4JKNq89s
+1WY9mtTXklCR1zMv/LXIgYMW2keFrzT8a9m4+shH1T//HohM/rNe2nN61AOWaxk+
+J37M2/s3c7/2NLnSN8u9ohUq3TUirdtN3nHr/HjC/8O295Gxh95+dsGIa3Zpxy6I
+zS2Yb3Zq1Q9BGXbR9Wc+sChPWHSP+/cJzZKInH/HXs48f2rnrd1KviJVTYti11/9
+7qHOk5Ylv/5+cvdTD4OQ0BwzzQe7skKUEpz3/nmVdFb88A/+Q3Wzt/4I9oh6ocnH
+O+cCY2H1DAEj5rNGKtsYkw8e5pfXzRNoqFpd+D3uYWLN9pt9sS5CvlwZXbcPBc8L
+mpXD7i/c8zpp/Y5f14XXzJvNdGnyr6DlwQHvnFjD/D8XOR6+sXJOxaW4+59WK67s
+3RfBZSD7/Q5j4ubejO7u4/fcqs4/Pcr6T6VA/WfrZBWx40t7uY4nxt8GAA==
+=O+C2
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/maxbucknell
+
+==================================================================
