@@ -1,0 +1,47 @@
+This is my website
+==================
+
+This is my website, the same way Rome was Caesar's. Two things to note:
+
+  |
+  | Websites, like empires, are not made in a day. This is still very much a work
+  | in progress. Regard it as such.
+  |
+  | Websites, like empires, are not made by one person. Many people and tools
+  | contributed to this existing, and all are (I believe) fully credited herein.
+  |
+
+## This is my technical stack.
+
+Here's a list of the technology I've used
+
++ centos 6
++ git (and github)
++ nginx
++ stunnel
++ varnish
++ node.js
+
++ grunt
++ express
++ lo-dash
++ sass
++ bourbon
++ neat
++ bitters
+
++ jquery
++ lodash
++ labjs
++ jakesgordon/javascript-state-machine
+
+I would also like to thank my friend, Chris, my girlfriend, Eliza, my colleagues
+Angels, Bolaji, John, Mary, Mat, Sam and Steve for letting me bounce ideas
+around with them. I wouldn't be doing this without them. You guys rock.
+
+And, thank you for looking at the human side of a website. Keep doing that,
+because things are worthless unless we ascribe worth. By definition, you are
+making what we do valuable, and I appreciate that.
+
+Best wishes,
+Max.

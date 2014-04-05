@@ -41,6 +41,7 @@ app.use(require('./helpers/script-manager.js'))
  */
 
 app.get('/', require('./routes/index'))
+app.get('/humans.txt', require('./routes/humans.txt'))
 
 
 /**
