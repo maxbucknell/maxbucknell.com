@@ -51,6 +51,11 @@ app.get('/humans.txt', require('./routes/humans.txt'))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jade')
 
+/**
+ * Configure 404 handler
+ */
+
+app.use(require('./routes/error/404'))
 
 /**
  * Export public api
