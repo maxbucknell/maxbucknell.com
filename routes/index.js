@@ -32,6 +32,8 @@ function getMarkdownContent (file) {
 function index (req, res) {
   res.addScript('/public/js/welcome.js')
 
+  res.locals.title = 'Max Bucknell'
+
   res.locals.me = getMarkdownContent('/content/me.markdown')
   res.locals.work = getMarkdownContent('/content/work.markdown')
   res.locals.university = getMarkdownContent('/content/university.markdown')
