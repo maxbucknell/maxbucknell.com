@@ -35,9 +35,9 @@ Here's a list of the technology I've used
 + labjs
 + jakesgordon/javascript-state-machine
 
-I would also like to thank my friend, Chris, my girlfriend, Eliza, my colleagues
-Angels, Bolaji, John, Mary, Mat, Sam and Steve for letting me bounce ideas
-around with them. I wouldn't be doing this without them. You guys rock.
+I would also like to thank my girlfriend, Eliza, and my friends Chris, Steve,
+Bolaji and Mat for letting me bounce ideas around with them. I wouldn't be doing
+this without them. They rock.
 
 And, thank you for looking at the human side of a website. Keep doing that,
 because things are worthless unless we ascribe worth. By definition, you are
