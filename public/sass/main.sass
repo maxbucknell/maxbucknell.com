@@ -19,7 +19,7 @@ body
   +span-columns(6)
   +shift(3)
 
-  transform-style: preserve-3d
+  +transform-style(preserve-3d)
 
   +media(max-width 68em, 10)
     +span-columns(6)
@@ -39,14 +39,16 @@ body
 .welcome-bubble
   +span-columns(2 of 6)
 
-  transition: transform 0.24s cubic-bezier(0.5, -0.3, 0.5, 1.5)
+  +transition-property(transform)
+  +transition-duration(0.24s)
+  +transition-timing-function(cubic-bezier(0.5, -0.3, 0.5, 1.5))
   border-radius: 100%
 
   img
     width: 100%
 
   .welcome-focus &
-    transition: transform 0.24s cubic-bezier(0.5, -0.5, 0.5, 1.3)
+    +transition-timing-function(cubic-bezier(0.5, -0.5, 0.5, 1.3))
 
 
 .clickable
@@ -54,26 +56,26 @@ body
 
 
 .me-welcome-bubble
-  transform: translateX(116.03631%) translateZ(0.0001px)
+  +transform(translateX(116.03631%) translateZ(0.0001px))
   z-index: 3
 
 
 .work-welcome-bubble
-  transform: translateX(-30px) translateY(9px) rotateZ(7deg)
+  +transform(translateX(-30px) translateY(9px) rotateZ(7deg))
 
   z-index: 2
 
   .welcome-focus &, .no-hover &
-    transform: translateX(-116.03631%)
+    +transform(translateX(-116.03631%))
 
 
 .university-welcome-bubble
-  transform: translateX(-116.03631%) translateX(28px) translateY(15px) rotateZ(38deg)
+  +transform(translateX(-116.03631%) translateX(28px) translateY(15px) rotateZ(38deg))
 
   z-index: 2
 
   .welcome-focus &, .no-hover &
-    transform: translateX(0)
+    +transform(translateX(0))
 
 
 .welcome-descriptions
