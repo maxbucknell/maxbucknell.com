@@ -1,11 +1,12 @@
 /* jshint browser: true, jquery: true */
-/* globals mbcom: false */
+/* globals mbcom: false, _: false */
 
 /**
  * Module dependencies
  */
 
 //@include /public/lib/jquery/dist/jquery.js
+//@include /public/lib/lodash/dist/lodash.js
 
 //@include /public/js/bootstrap.js
 //@include /public/js/welcome/state-machine.js
@@ -18,6 +19,9 @@
 $(function welcomeBoxInit () {
   'use strict';
 
+  /**
+   * Add
+   */
 
   /**
    * Set up the state machine
@@ -41,9 +45,19 @@ $(function welcomeBoxInit () {
    */
 
   $bubblesContainer
-    .on('mouseenter.welcome tap.welcome', breakBubblesOut)
-    .on('mouseleave.welcome', putBubblesBack)
     .on('click.welcome tap.welcome', '.welcome-bubble', bubbleSelect)
+
+
+  /**
+   * Show the welcome discs
+   */
+
+  _.delay(showBubbles, 800)
+
+  function showBubbles () {
+    $bubblesContainer.removeClass('condensed')
+  }
+
 
   /**
    * Make the bubble a hand cursor
@@ -69,24 +83,6 @@ $(function welcomeBoxInit () {
   function removeBubbleFocus () {
     $('.bubble-active').removeClass('bubble-active')
     $('.description-active').removeClass('description-active')
-  }
-
-
-  /**
-   * Spread the bubbles out for easy tapping.
-   */
-
-  function breakBubblesOut (e) {
-    $(e.currentTarget).addClass('welcome-focus')
-  }
-
-
-  /**
-   * Clump the bubbles back together to look cool.
-   */
-
-  function putBubblesBack (e) {
-    $(e.currentTarget).removeClass('welcome-focus')
   }
 
 
