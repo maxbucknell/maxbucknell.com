@@ -10,38 +10,6 @@ block content
       div.welcome-bubble.university-welcome-bubble(data-state-name='university')
         img(src="/public/images/university.png" alt="University of York logo")
     div.welcome-descriptions
-      div.me-welcome-description
-        p
-          | In more than one way, I am a curious person. I like to think
-          | about things, and write about what I think. Sometimes that's words,
-          | sometimes it's code, and sometimes it's mathematics, or (usually)
-          | some combination thereof.
-        p
-          | I like to start projects, to scratch some kind of itch, or to learn
-          | something that I don't understand. Right now, I'm making this
-          | website for myself, using a few tools that seem interesting to me.
-          | I'm also writing a JavaScript library to do algebra, because I don't
-          | like how magical Wolfram|Alpha et al seem to me. It's turning out
-          | to be an interesting exercise in analysing how I think about
-          | problems.
-      div.work-welcome-description
-        p
-          | I work as a developer at Redbox Digital, a London based
-          | Magento agency. Some very clever, and very nice people work there,
-          | and I doubt that I could be much happier.
-        p
-          | For work, I tend to do a bit of front end styling, small amounts of
-          | Magento development, and some JavaScript on the side. I will be
-          | forever grateful for them putting up with my crap.
-      div.university-welcome-description
-        p
-          | I am currently pursuing a mathematics degree at the
-          | University of York, UK. I'm in my second year, and so far,
-          | it's going very well.
-        p
-          | I think I will head down the applied mathematics route, specifically
-          | fluid dynamics. Like all of mathematics, it's rich, interesting and
-          | has a wonderful history, with some real masters to study. But it
-          | also has a great deal of relevance, as well as interesting things to
-          | do in the real world and some pretty tight links with other things
-          | that I like.
+      div.me-welcome-description!= me
+      div.work-welcome-description!= work
+      div.university-welcome-description!= university
