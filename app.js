@@ -29,8 +29,9 @@ app.use( '/.well-known'
        , express.static(path.join(__dirname, 'public/.well-known'))
        )
 
+
 /**
- * Load default scripts
+ * Frontend dependency manager
  */
 
 app.use(require('./helpers/script-manager.js'))
@@ -51,11 +52,13 @@ app.get('/humans.txt', require('./routes/humans.txt'))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jade')
 
+
 /**
  * Configure 404 handler
  */
 
 app.use(require('./routes/error/404'))
+
 
 /**
  * Export public api
